@@ -12,20 +12,22 @@
     <div class="container">
 
     <div class="input3">
-        <label><span>Day</span>
-        <input type="text" placeholder="DD"></label>
-        <label><span>Month</span>
-        <input type="text" placeholder="MM"></label>
-        <label><span>year</span>
-        <input type="text" placeholder="YYYY"></label>
+        <label><span >Day</span>
+        <input type="text" placeholder="DD" class="inDay"></label>
+        <label><span >Month</span>
+        <input type="text" placeholder="MM" class="inMonth"></label>
+        <label><span >year</span>
+        <input type="text" placeholder="YYYY" class="inYear"></label>
     </div>
       
+
+    <hr>
     <div class="btn"></div>
 
     <div class="section1">
-        <div class="years">years</div>
-        <div class="months">months</div>
-        <div class="days">days</div>
+        <div class="years" id="hidden" oninput="oni()">ye</div>
+        <div class="months" id="hidden">months</div>
+        <div class="days"   id="hidden">days</div>
     </div>
 
     </div>
