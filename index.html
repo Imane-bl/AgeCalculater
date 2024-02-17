@@ -12,25 +12,32 @@
     <div class="container">
 
     <div class="input3">
-        <label><span >Day</span>
-        <input type="text" placeholder="DD" class="inDay"></label>
-        <label><span >Month</span>
-        <input type="text" placeholder="MM" class="inMonth"></label>
-        <label><span >year</span>
-        <input type="text" placeholder="YYYY" class="inYear"></label>
-    </div>
       
+        <label><span >Day</span>
+        <input type="number" placeholder="DD" class="inDay"></label>
+
+        <span class="erreurDay">the field is required</span>
+
+        <label><span >Month</span>
+        <input type="number" placeholder="MM" class="inMonth"></label>
+        
+        <span class="erreurMonth">the field is required</span>
+        <label><span >year</span>
+        <input type="number" placeholder="YYYY" class="inYear"></label>
+        <span class="erreurYear">the field is required</span>
+      </div>
 
     <hr>
-    <div class="btn"></div>
+    <button class="btn"></button>
 
     <div class="section1">
-        <div class="years" id="hidden" oninput="oni()">ye</div>
-        <div class="months" id="hidden">months</div>
-        <div class="days"   id="hidden">days</div>
+ <div class="years" >      <span class="hidden" >--</span> year</div>
+    <div class="months" >   <span class="hidden">--</span> months</div>
+    <div class="days"   >  <span class="hidden">--</span>  days</div>
     </div>
 
     </div>
     
+    <script src="main.js"></script>
 </body>
 </html>

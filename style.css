@@ -28,7 +28,8 @@ body {
    top:50%;
    left:50%;
    position: relative;
-   background-color: var(--White)
+   background-color: var(--White);
+   border-bottom-right-radius: 90px;
 
 }
 .input3{
@@ -58,7 +59,10 @@ div{
   
 }
 hr{
-margin:6px 30px;
+margin-top: 20px;
+margin-right: 30px;
+margin-left: 20px;
+
 
 }.btn{
     width:45px;
@@ -69,35 +73,86 @@ margin:6px 30px;
     right:15px;  border-bottom: 1px solid var(--Smokey-grey);
     position: fixed;
     right:30px;
-    top:110px;
+    top:120px;
 }
 .btn:hover
 {
   background-color: var(--Light-grey);  
 }
 .section1{
+    position: relative;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-size: 40px;
     font-weight:bolder;
-    margin-top: 10px;
-    padding:20px;
-
- 
-    position: absolute;
+    margin-top: 20px;
     left:85px;
+    
 
 }
-.years::before,
-.months::before,
-    .days::before{
 
+
+/*
+.hidden::before{
+display: hidden;
     content: "--";
     position: absolute;
     left:-60px;
+
+    font-size: 60px;
     color:var(--Purple);
     font-weight: bolder;
+*/
   
+.section1 .hidden{
+   
+    display: hidden;
+
+   position: absolute;
+ 
+  
+    font-size: 60px;
+    color:var(--Purple);
+    font-weight: bolder;
+    position: absolute;
+    left:-70px;
+     padding-top:0px;
+  
+  
+
+
+}
+
+.input3 {
+    display:flex;
+    position: relative;
+}
+
+.erreurDay,
+.erreurMonth,
+.erreurYear
+
+{
+    color:red;
+    font-size: 8px;
+     font-weight: bolder;   
+    
+}
+.erreurDay{
+    position: fixed;
+    top:110px; 
+}
+.erreurMonth{
+    position: fixed;
+    top:110px;
+    left:130px 
+}
+.erreurYear{
+    position: fixed;
+    top:110px; 
+    left:250px
+
+
 }
 /* for the -- disepear */
 /*
