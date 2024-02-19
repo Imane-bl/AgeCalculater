@@ -14,6 +14,16 @@ let ey = document.querySelectorAll(".erreurYear");
 let em= document.querySelectorAll(".erreurMonth");
 let ed = document.querySelectorAll(".erreurDay");
 
+let invalid=false
+day.addEventListener("input",(e)=>{
+    if(+day.value >31){
+        ey.textContent="must be valid date";
+        invalid=false
+    }else{
+        invalid=true
+
+    }
+})
 
 clickBtn.addEventListener("click", () => {
     span.classList.add("hidden")
