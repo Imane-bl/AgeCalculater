@@ -15,6 +15,61 @@ let invalid = false;
 
 day.addEventListener("input", (e) => {
     if (+day.value > 31) {
+        ed.textContent = "must be a valid date";
+        invalid = false;
+        return;
+    } else {
+        invalid = true;
+        ed.textContent = "";
+
+
+    }
+
+    if (+day.value === 0) {
+        invalid = false;
+
+        ed.textContent = "field required";
+        invalid = false;
+        return;
+    } else {
+        ed.textContent = "";
+       // invalid=true;
+    }
+});
+
+
+
+month.addEventListener("input", (e) => {
+    if (+month.value > 12) {
+        em.textContent = "must be a valid date";
+        invalid = false;
+        return;
+    } else {
+        invalid = true;
+        em.textContent = "";
+
+
+    }
+
+    if (+month.value === 0) {
+        invalid = false;
+
+        em.textContent = "field required";
+        invalid = false;
+        return;
+    } else {
+        em.textContent = "";
+       // invalid=true;
+    }
+});
+
+
+
+
+
+
+year.addEventListener("input", (e) => {
+    if (+year.value > 2024) {
         ey.textContent = "must be a valid date";
         invalid = false;
         return;
@@ -25,7 +80,7 @@ day.addEventListener("input", (e) => {
 
     }
 
-    if (+day.value === 0) {
+    if (+year.value === 0) {
         invalid = false;
 
         ey.textContent = "field required";
@@ -33,6 +88,7 @@ day.addEventListener("input", (e) => {
         return;
     } else {
         ey.textContent = "";
+       // invalid=true;
     }
 });
 
